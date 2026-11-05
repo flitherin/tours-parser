@@ -1,0 +1,43 @@
+{
+  "success": true,
+  "data": [
+    [
+      "05.06.2027",
+      [],
+      "Сб",
+      7,
+      "12.06",
+      ["Анталья", "Анталья", 1, 1, "Анталья", 2, "Москва", 3, "Анталья"],
+      ["https://example.com/hotel", "Sunrise Resort Hotel 4*", "", 101, "hotel"],
+      ["AI", "Всё включено", 2424, 1],
+      [1, "Standard", 1],
+      [],
+      {
+        "currency": "RUB",
+        "currencyId": 5561,
+        "total": 140000,
+        "residences": [],
+        "flightsTo": [],
+        "flightsFrom": [],
+        "insurance": 0,
+        "other": 0,
+        "priceTypes": [true, true, true, false],
+        "specialSell": false
+      },
+      [["/book/abc", "Купить"]],
+      "Есть",
+      [],
+      {},
+      1,
+      ["Москва", "Россия"],
+      1,
+      "",
+      "",
+      [2, true],
+      "",
+      [1, 2],
+      [0, 0],
+      {}
+    ]
+  ]
+}

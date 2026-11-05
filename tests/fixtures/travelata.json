@@ -1,0 +1,22 @@
+{
+  "result": [
+    {
+      "hotelName": "Sunrise Resort Hotel",
+      "hotelCategory": "cat4",
+      "hotelRating": 4.4,
+      "resortId": "resort1",
+      "mealId": "mealAI",
+      "checkinDate": "2027-06-05",
+      "nights": 7,
+      "roomType": "Standard",
+      "price": 140000,
+      "currency": "RUB",
+      "tourPageUrl": "https://travelata.ru/hotel/1/tourPage?identity=abc",
+      "transferIncluded": true,
+      "insuranceIncluded": true,
+      "baggage": "20 кг",
+      "directFlight": true,
+      "departureTime": "10:30"
+    }
+  ]
+}

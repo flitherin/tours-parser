@@ -1,0 +1,118 @@
+network:
+  user_agent: "TourParser/1.0 (personal travel comparison)"
+  delay_min: 1.0
+  delay_max: 3.0
+  max_concurrency: 3
+  retries: 3
+  timeout: 45
+  cache_ttl_seconds: 5400
+  respect_robots_txt: true
+
+storage:
+  database: data/tours.db
+logging:
+  file: logs/parser.log
+  level: INFO
+report:
+  output_dir: reports
+  top: 20
+  sort: value
+
+scoring:
+  fuzzy_threshold: 92
+  weights:
+    price: 0.38
+    hotel: 0.18
+    meal: 0.12
+    services: 0.10
+    flight: 0.10
+    below_market: 0.12
+
+currency:
+  rub_rates:
+    RUB: 1.0
+    USD: 90.0
+    EUR: 100.0
+    AED: 24.5
+    EGP: 1.9
+    THB: 2.6
+    TRY: 2.2
+
+sources:
+  travelata:
+    enabled: true
+    base_url: https://api-gateway.travelata.ru/partners
+    check_robots_txt: false
+  sletat:
+    enabled: true
+    base_url: https://module.sletat.ru/Main.svc
+    check_robots_txt: false
+    page_size: 100
+    poll_interval: 2
+    max_polls: 20
+  tez_tour:
+    enabled: true
+    base_url: https://search.tez-tour.com/tariffsearch
+    check_robots_txt: false
+    default_price_max: 10000000
+  tourvisor:
+    enabled: true
+    check_robots_txt: false
+    page_size: 100
+    max_pages: 3
+    initial_poll_delay: 3
+    poll_interval: 2
+    max_polls: 30
+  biblio_globus:
+    enabled: true
+    check_robots_txt: false
+    page_size: 100
+    max_price_lists: 20
+    max_offers: 500
+  level_travel:
+    enabled: true
+    check_robots_txt: false
+  tourtrans:
+    enabled: true
+    feed_url: https://www.tourtrans.ru/tours.xml
+    check_robots_txt: true
+    max_offers: 500
+  paks:
+    enabled: true
+    date_chunk_days: 7
+    nights_chunk_size: 4
+    max_pages: 5
+    max_requests: 60
+  ambotis:
+    enabled: true
+    date_chunk_days: 7
+    nights_chunk_size: 4
+    max_pages: 5
+    max_requests: 60
+  russian_express:
+    enabled: true
+    date_chunk_days: 7
+    nights_chunk_size: 4
+    max_pages: 5
+    max_requests: 60
+  space_travel:
+    enabled: true
+    date_chunk_days: 7
+    nights_chunk_size: 4
+    max_pages: 5
+    max_requests: 60
+
+search:
+  departure_city: Москва
+  country: Турция
+  date_from: 2027-06-01
+  date_to: 2027-06-15
+  nights_min: 7
+  nights_max: 10
+  adults: 2
+  children_ages: []
+  min_stars: 3
+  max_stars: 5
+  meal: null
+  max_budget: null
+  min_rating: null

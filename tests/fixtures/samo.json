@@ -1,0 +1,54 @@
+{
+  "_provenance": "Synthetic contract fixture based on https://dokuwiki.samo.ru/doku.php?id=onlinest:api:searchtour:prices; not a captured operator response.",
+  "SearchTour_TOWNFROMS": [
+    {"id": "2", "name": "Moscow", "nameAlt": "Москва", "stateKey": "22"},
+    {"id": "16", "name": "St. Petersburg", "nameAlt": "Санкт-Петербург", "stateKey": "22"}
+  ],
+  "SearchTour_STATES": [
+    {"id": "6", "name": "Турция", "stateISO3": "TUR"},
+    {"id": "66", "name": "Объединенные Арабские Эмираты", "stateISO3": "ARE"}
+  ],
+  "SearchTour_CURRENCIES": [
+    {"id": "5", "name": "ruble", "nameAlt": "рубль", "currencyISO": "RUB", "alias": "RUB"},
+    {"id": "2", "name": "dollar", "nameAlt": "доллар", "currencyISO": "USD", "alias": "USD"}
+  ],
+  "SearchTour_PRICES": {
+    "prices": [
+      {
+        "id": "0xTEST1",
+        "checkIn": "20270605",
+        "checkOut": "20270612",
+        "nights": "7",
+        "adult": "2",
+        "child": "0",
+        "infant": "0",
+        "tour": "Antalya",
+        "hotel": "Sunrise Resort Hotel",
+        "hotelKey": "16531",
+        "town": "Анталья",
+        "star": "****",
+        "meal": "AI",
+        "room": "STD ROOM",
+        "htPlace": "DBL",
+        "price": "1400",
+        "currency": "USD",
+        "currencyKey": "2",
+        "convertedPrice": "140000 RUB",
+        "convertedCurrencyKey": "5",
+        "hotelAvailability": "YYYY",
+        "packetType": "0",
+        "bron": "1",
+        "stopSale": "",
+        "crossTour": "0",
+        "hotelCount": "1",
+        "grouped": "0",
+        "stateFromKey": "22",
+        "townFromKey": "2",
+        "stateKey": "6",
+        "transportCodeKey": "1",
+        "listTime": "10:00,22:30",
+        "freightExternal": "Y"
+      }
+    ]
+  }
+}
